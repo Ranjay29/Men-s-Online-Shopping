@@ -165,7 +165,7 @@ ul li:hover .dropdown {
         font-size: 32px;
     }
     .searchbar input {
-        width: 220px;
+        width: 100px;
     }
     .productcategories {
         width:100%;
@@ -174,11 +174,31 @@ ul li:hover .dropdown {
     }
     .productcategories> div {
         margin-left: 7px;
-        width: 220px;
+        width: 180px;
     }
     #productcategories> h2 {
         font-size: xx-large;
         padding-top: 20px;
     }
-
+}
+@media (max-width: 425px) {
+    #hero h1 {
+        font-size: 32px;
+    }
+    .searchbar:hover {
+        width: 380px;
+    }
+    .productcategories {
+        width:100%;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+    }
+    .productcategories> div {
+        margin-left: 7px;
+        width: 180px;
+    }
+    #productcategories> h2 {
+        font-size: xx-large;
+        padding-top: 20px;
+    }
 }
