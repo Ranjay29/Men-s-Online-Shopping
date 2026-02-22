@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shirt Categories</title>
+    <link rel="stylesheet" href="./shirt.css">
+</head>
+<body>
+
+<h1 class="title">Mens Online Shopping</h1>
+
+<div class="back">
+    <a href="./index.html">← Back to home page</a>
+</div>
+
+<hr>
+
+<h2 class="subtitle">Shirts Categories</h2>
+
+<div class="products">
+
+    <div class="card">
+        <img src="./images/shirt1.jpg" alt="Checked Shirt" onclick="openProductModal('shirt', 1)" style="cursor: pointer;">
+        <p>Checked Shirt</p>
+        <label>SIZE:</label>
+        <select>
+            <option>S</option>
+            <option>M</option>
+            <option>L</option>
+            <option>XL</option>
+        </select>
+        <button class="btn" onclick="Cart()">Add to Cart</button>
+    </div>
+
+    <div class="card">
+        <img src="./images/shirt2.webp" alt="Striped Shirt" onclick="openProductModal('shirt', 2)" style="cursor: pointer;">
+        <p>Striped Shirt</p>
+        <label>SIZE:</label>
+        <select>
+            <option>S</option>
+            <option>M</option>
+            <option>L</option>
+            <option>XL</option>
+        </select>
+        <button class="btn" onclick="Cart()">Add to Cart</button>
+    </div>
+
+    <div class="card">
+        <img src="./images/shirt3.jpg" alt="Party Wear Shirt" onclick="openProductModal('shirt', 3)" style="cursor: pointer;">
+        <p>Cuban / Party Wear Shirt</p>
+        <label>SIZE:</label>
+        <select>
+            <option>S</option>
+            <option>M</option>
+            <option>L</option>
+            <option>XL</option>
+        </select>
+        <button class="btn" onclick="Cart()">Add to Cart</button>
+    </div>
+
+    <div class="card">
+        <img src="./images/shirt4.jpg" alt="Designer Shirt" onclick="openProductModal('shirt', 4)" style="cursor: pointer;">
+        <p>Designer Shirt</p>
+        <label>SIZE:</label>
+        <select>
+            <option>S</option>
+            <option>M</option>
+            <option>L</option>
+            <option>XL</option>
+        </select>
+        <button class="btn" onclick="Cart()">Add to Cart</button>
+    </div>
+
+</div>
+
+<script src="./script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+body { 
+    background: url('./bgmens.jpg') no-repeat center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+.feedback-container {
+    max-width: 600px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 40px;
+    border-radius: 10px;
+}
+
+h1 {
+    color: #000;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.feedback-form {
+    margin: 20px 0;
+}
+
+.radio-group {
+    margin: 15px 0;
+}
+
+.radio-group label {
+    display: inline-block;
+    margin: 0 15px;
+    color: #000;
+}
+
+input[type=submit] {
+    padding: 10px 20px;
+    background: #0022e4;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+input[type=submit]:hover {
+    background: #0018b8;
+}
+
+h3 {
+    color: #000;
+    margin-top: 20px;
+}
+
+#back {
+    margin-top: 20px;
+}
+
+a {
+    color: #0022e4;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
