@@ -195,7 +195,8 @@ ul li:hover .dropdown {
     }
     .productcategories> div {
         margin-left: 7px;
-        width: 190px;
+        width: 170px;
+        height: 280px;
     }
     #productcategories> h2 {
         font-size: xx-large;
