@@ -1,20 +1,45 @@
-body { 
-    background: url('./mens.jpg') no-repeat center/cover;
-    background-size: cover;
+/* Reset */
+* {
     margin: 0;
-    padding: 20px;
-    font-family: Arial, sans-serif;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-h1, p { 
-    color: #fff; 
+/* Background */
+body {
+    background: url('./mens.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Overlay */
+.overlay {
+    background: rgba(0, 0, 0, 0.6);
+    min-height: 100vh;
+    padding: 30px 20px;
+}
+
+/* Heading */
+h1 {
+    color: #fff;
     text-align: center;
+    font-size: clamp(24px, 4vw, 40px);
+}
+
+p {
+    color: #ddd;
+    text-align: center;
+    margin-top: 10px;
+    font-size: clamp(14px, 2vw, 18px);
 }
 
 hr {
-    margin: 20px 0;
+    margin: 25px auto;
+    width: 60%;
+    border: 1px solid rgba(255,255,255,0.3);
 }
 
+/* Center container */
 .register-container {
     display: flex;
     justify-content: center;
@@ -22,66 +47,86 @@ hr {
     min-height: 60vh;
 }
 
-.wrapper { 
-    height: 480px; 
-    width: 420px; 
-    background: rgba(255, 255, 255, 0.12); 
-    box-shadow: 0 8px 32px;
-    border-radius: 10px; 
-    padding: 20px;
+/* Card */
+.wrapper {
+    width: 100%;
+    max-width: 420px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
 }
 
+/* Title */
 .wrapper h3 {
-    font-size: 25px;
-    color: white;
+    font-size: 24px;
+    color: #fff;
     text-align: center;
-    margin-top: 0;
+    margin-bottom: 20px;
 }
 
+/* Inputs */
 .input-box {
-    margin: 20px 0;
+    margin-bottom: 20px;
 }
 
 .input-box input {
     width: 100%;
-    padding: 12px 16px;
+    padding: 14px 18px;
     border-radius: 40px;
-    border: 3px solid rgba(255, 255, 255, 0.2);
+    border: 2px solid rgba(255, 255, 255, 0.3);
     background: transparent;
     color: #fff;
-    box-sizing: border-box;
+    font-size: 16px;
+    transition: 0.3s ease;
 }
 
 .input-box input::placeholder {
-    color: #fff;
+    color: #ccc;
 }
 
-.T\&C {
-    margin: 15px 0;
-    color: #fff;
+.input-box input:focus {
+    border-color: #00c6ff;
+    outline: none;
 }
 
-.T\&C a {
+/* Terms */
+.terms {
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.terms a {
     color: #87ceeb;
     text-decoration: none;
 }
 
+.terms a:hover {
+    text-decoration: underline;
+}
+
+/* Button */
 .btn {
     width: 100%;
-    padding: 10px;
-    background: #ffffff;
-    color: #000;
+    padding: 12px;
+    background: linear-gradient(45deg, #00c6ff, #0072ff);
+    color: #fff;
     border: none;
-    border-radius: 20px;
+    border-radius: 25px;
     cursor: pointer;
-    font-weight: bold;
-    margin-top: 10px;
+    font-weight: 600;
+    font-size: 16px;
+    transition: 0.3s ease;
 }
 
 .btn:hover {
-    background: #ddd;
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 198, 255, 0.6);
 }
 
+/* Login link */
 .login-link {
     text-align: center;
     margin-top: 15px;
@@ -90,4 +135,25 @@ hr {
 .login-link a {
     color: #87ceeb;
     text-decoration: none;
+    font-size: 14px;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+
+    .wrapper {
+        padding: 20px;
+    }
+
+    hr {
+        width: 90%;
+    }
+
+    p {
+        padding: 0 10px;
+    }
 }
