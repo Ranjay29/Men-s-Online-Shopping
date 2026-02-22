@@ -1,3 +1,19 @@
+// =============== Registration popup ===============
+function register(event) {
+    event.preventDefault(); // Stop form refresh
+
+    // Here you can store data in localStorage if needed
+    // localStorage.setItem("username", document.querySelector("input[type='text']").value);
+
+    // Show popup
+    document.getElementById("successPopup").style.display = "flex";
+
+    // Redirect after 2 seconds
+    setTimeout(function() {
+        window.location.href = "login page.html";
+    }, 2000);
+}
+
 // =============== Product Data ===============
 const productData = {
     shirt: [
@@ -172,15 +188,6 @@ function login() {
     const username = document.querySelector('input[placeholder="Username*"]');
     if (username && username.value.trim()) {
         alert('You have successfully logged in');
-    } else {
-        alert('Please fill in all fields');
-    }
-}
-
-function register() {
-    const username = document.querySelector('input[placeholder="Username"]');
-    if (username && username.value.trim()) {
-        alert('You have successfully registered');
     } else {
         alert('Please fill in all fields');
     }
